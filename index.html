@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1015"><meta name="description" content="VisionON workplace safety intelligence portal">
+  <title>VisionON — Safety intelligence</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#overview" aria-label="VisionON home"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none"><path d="M3 16S7.7 7 16 7s13 9 13 9-4.7 9-13 9S3 16 3 16Z" stroke="currentColor" stroke-width="2.1"/><circle cx="16" cy="16" r="4.2" stroke="currentColor" stroke-width="2.1"/><circle cx="16" cy="16" r="1.6" fill="currentColor"/></svg></span><span>vision<span class="brand-light">on</span><small>SAFETY INTELLIGENCE</small></span></a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom"><div class="secure-card"><span class="secure-dot"></span><div><strong>Systems operational</strong><span>All sites reporting normally</span></div><span class="secure-arrow">↗</span></div><div class="sidebar-user"><div class="avatar" id="avatar">JM</div><div class="sidebar-identity"><strong id="userName">Jordan Miller</strong><span id="userRole">Safety Manager</span></div><button class="icon-button" id="profileButton" aria-label="Switch portal" title="Switch portal">⌄</button></div></div>
+    </aside>
+    <main class="main-panel">
+      <header class="topbar"><button class="icon-button menu-button" id="menuButton" aria-label="Open navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> <strong id="crumb">Overview</strong></div><div class="topbar-actions"><span class="site-pill"><i></i><span id="topSite">North Plant</span></span><button class="icon-button notification-button" aria-label="Notifications">♧<i></i></button><button class="role-switch" id="topRoleButton"><span class="avatar small" id="topAvatar">JM</span><span><strong id="topName">Jordan Miller</strong><small id="topRole">Safety Manager</small></span><span>⌄</span></button><button class="button-secondary hidden" id="logoutButton">Sign out</button></div></header>
+      <div class="page-content" id="pageContent"></div>
+      <footer class="footer"><span>VISIONON <span class="footer-muted">SAFETY INTELLIGENCE PLATFORM</span></span><span><i class="secure-dot"></i> ENCRYPTED WORKSPACE <span class="footer-sep">·</span> v1.0.0</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
